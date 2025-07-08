@@ -3,78 +3,77 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>SalmmonVR</title>
+  <title>SalmmonVR - Mobile</title>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
     body {
       margin: 0;
       padding: 0;
-      background: linear-gradient(to right, #ff5ca2, #00c3ff);
+      background: linear-gradient(to bottom, #ff5ca2, #00c3ff);
       font-family: 'Arial', sans-serif;
-      overflow-x: hidden;
       color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      overflow-x: hidden;
     }
 
     header {
       text-align: center;
-      padding: 50px 20px 10px;
+      padding: 40px 10px 20px;
     }
 
     header h1 {
       font-family: 'Pacifico', cursive;
-      font-size: 2.5rem;
+      font-size: 1.8rem;
+      line-height: 1.4;
       color: white;
       background: linear-gradient(to right, #fff0f5, #ccf5ff);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
-      text-shadow: 2px 2px #00000040;
-      animation: fadeIn 2s ease-in-out;
+      text-shadow: 1px 1px #00000030;
+      animation: fadeIn 1.5s ease-in-out;
     }
 
     .pfp {
-      width: 150px;
-      height: 150px;
+      width: 120px;
+      height: 120px;
       border-radius: 50%;
-      border: 4px solid white;
-      margin-top: 10px;
-      animation: popIn 1.5s ease-out;
+      border: 3px solid white;
+      margin-top: 15px;
+      animation: popIn 1.2s ease-out;
     }
 
-    .container {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-around;
-      padding: 50px 20px;
-      gap: 40px;
-    }
-
-    .bio, .cool-people {
-      flex: 1 1 300px;
-      max-width: 400px;
+    .section {
+      width: 90%;
       background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(4px);
       padding: 20px;
-      border-radius: 20px;
-      backdrop-filter: blur(5px);
-      box-shadow: 0 0 15px #00000030;
-      animation: slideUp 1.5s ease-in-out;
+      border-radius: 16px;
+      box-shadow: 0 0 10px #00000030;
+      margin: 20px 0;
+      animation: slideUp 1.4s ease-in-out;
     }
 
-    .bio h2, .cool-people h2 {
-      font-size: 1.5rem;
-      border-bottom: 2px solid white;
-      padding-bottom: 5px;
-      margin-bottom: 15px;
+    h2 {
+      font-size: 1.3rem;
+      margin-bottom: 10px;
+      border-bottom: 1px solid white;
+      padding-bottom: 4px;
     }
 
-    .cool-people ul {
-      list-style-type: none;
-      padding-left: 0;
-      font-size: 1.1rem;
+    p, ul {
+      font-size: 1rem;
+      line-height: 1.5;
     }
 
-    .cool-people li {
-      margin: 10px 0;
+    ul {
+      padding-left: 1em;
+    }
+
+    li {
+      margin: 8px 0;
     }
 
     @keyframes fadeIn {
@@ -88,18 +87,8 @@
     }
 
     @keyframes slideUp {
-      from { opacity: 0; transform: translateY(50px); }
+      from { opacity: 0; transform: translateY(30px); }
       to { opacity: 1; transform: translateY(0); }
-    }
-
-    @media (max-width: 600px) {
-      header h1 {
-        font-size: 1.8rem;
-      }
-      .container {
-        flex-direction: column;
-        align-items: center;
-      }
     }
   </style>
 </head>
@@ -109,28 +98,28 @@
     <img class="pfp" src="PFP1.png" alt="SalmmonVR PFP">
   </header>
 
-  <div class="container">
-    <div class="bio">
-      <h2>About Me</h2>
-      <p>
-        14 and straight &lt;3<br>
-        People say I'm bipolar? 😮‍😬<br>
-        I loveeeeee Catsssss Meow Bitch 🐈<br>
-        SUMMER ☀️<br>
-        I love making discord bots and games<br>
-        I love VR<br>
-        I DONT FREIND PEOPLE SO JUST DM ME
-      </p>
-    </div>
+  <div class="section">
+    <h2>About Me</h2>
+    <p>
+      14 and straight &lt;3<br>
+      People say I'm bipolar? 😮‍😬<br>
+      I loveeeeee Catsssss Meow Bitch 🐈<br>
+      SUMMER ☀️<br>
+      I love making discord bots and games<br>
+      I love VR<br>
+      I DONT FREIND PEOPLE SO JUST DM ME
+    </p>
+  </div>
 
-    <div class="cool-people">
-      <h2>Cool People</h2>
-      <ul>
-        <li>🍁maple🍁</li>
-        <li>Hayden</li>
-        <li>MudKip</li>
-      </ul>
-    </div>
+  <div class="section">
+    <h2>Cool People</h2>
+    <ul>
+      <li>🌹Rose🌹</li>
+      <li>Hayden</li>
+      <li>𝕏𝕠𝕟𝕚𝕗𝕪</li>
+      <li>Slamz</li>
+      <li>🍁maple🍁</li>
+    </ul>
   </div>
 </body>
 </html>
